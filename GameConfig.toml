@@ -1,0 +1,73 @@
+metadata.config_version_wildcard = "*"
+
+[game_setup]
+# Aliases for "v348" is "2018M", "v463" is "2021E".
+roblox_version = 'v463'
+
+[game_setup.persistence]
+sqlite_path = 'data.sqlite'
+clear_on_start = false
+
+[server_core.metadata]
+title = 'GAME_NAME'
+description = 'GAME_DESC'
+creator_name = 'CREATOR_NAME'
+icon_uri = 'place.png'
+
+[server_core.place_file]
+# Can be a file path or an online resource through HTTP(S).
+rbxl_uri = 'place.rbxl'
+
+[server_core]
+startup_script = '''
+game.Workspace.FilteringEnabled = true
+game:GetService("Players").CharacterAutoLoads = true
+'''
+
+
+retrieve_default_user_code = '''
+def f(tick: float) -> str:
+    return 'Player%d' % tick
+'''
+
+retrieve_avatar_type = '''
+function(user_iden, user_code)
+    return 'R15'
+end
+'''
+
+retrieve_username = '''
+def f(user_id_num, user_code):
+    return user_code
+'''
+
+retrieve_groups = '''
+function(user_iden, user_code)
+    return {
+        ['12345'] = 255;
+        ['12345'] = 255;
+        ['12345'] = 255;
+        ['12345'] = 255;
+        ['12345'] = 255;
+        ['12345'] = 255;
+        ['12345'] = 255;
+    }
+end
+'''
+
+retrieve_default_funds = '''
+def f(*a):
+    return 6969
+'''
+
+chat_style = 'ClassicAndBubble'
+
+[[remote_data.badges]]
+id_num = 163231044
+name = 'EnforcersPowers'
+
+[[remote_data.gamepasses]]
+id_num = 163231044
+name = 'EnforcersPowers'
+price = 1
+
