@@ -12,7 +12,7 @@ This project DOES NOT contain roblox binaries of any kind on its repository!
 
 # Setting up
 1. Download this repository and extract it into an empty folder
-2. Copy RFD-windows-latest.exe and place.rbxl and make sure its named place.rbxl and put it into the same directory (additionally, if you want a game thumbnail add a place.png)
+2. Copy RFD-windows-latest.exe and your RBXL file and make sure its named place.rbxl and put it into the same directory (additionally, if you want a game thumbnail add a place.png)
 3. Edit GameConfig.toml and main.py to your liking. (ensure theres a reference to StandaloneBlox and add me in credits if you distribute thanks)
 4. Download the assets of your game. [Follow RFD README on Loading Assets](https://github.com/Windows81/Roblox-Freedom-Distribution?tab=readme-ov-file#loading-assets-from-r%C5%8Dblox) and play the game for a while, anything that the game loads (like Animations, Labels, etc...) will be saved, once done close RFD and continue this guide.
 5. Test main.py: Just open it, input an username and Start Server+Client if your game opens its ready for packing.
